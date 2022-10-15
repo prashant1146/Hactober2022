@@ -7,9 +7,11 @@
 ```
 idToShortURL function from `urlshortner.go` file does this
 ```
+/shorten --> actual address is stored against a id in database --> db id is converted to short url and this url is returned to user
 
 
 4. Also reverse should be true, from the incremental short url id we should be able to derive database id.
 ```
 shortURLToId function from `urlshortner.go` file does this
 ```
+/redirect --> short url is converted to numeric database id --> value is fetched from datastore and actual url is returned to user ( with HTTP response code 301 for browser to redirect automatically)
