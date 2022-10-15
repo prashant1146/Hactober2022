@@ -1,1 +1,1 @@
-[AKG1301](https://github.com/AKG1301)
+[AKG1301](https://github.com/AKG1301/)
