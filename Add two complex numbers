@@ -1,0 +1,35 @@
+#include <iostream>
+#include<conio.h>
+using namespace std;
+
+class Complex{
+  int a,b,c,d,i,j;
+  public:
+  Complex()
+  {
+  cout<<"Enter the first complex number"<<endl;
+  cin>>a>>b;
+  cout<<"Enter the second complex number"<<endl;
+  cin>>c>>d;
+  cout<<"The given complex number is: "<<endl;
+  cout<<a<<"+"<<b<<"i"<<endl<<c<<"+"<<d<<"i"<<endl;
+  }
+  void add(){
+  i=a+c;
+  j=b+d;
+  }
+  void display()
+  {
+  cout<<endl<<"Sum of two complex number is "<<endl;
+  cout<<i<<"+"<<j<<"i"<<endl;
+  }
+  };
+  int main()
+  {
+  
+  Complex c;
+  c.add();
+  c.display();
+  getch();
+  return 0;
+  }
