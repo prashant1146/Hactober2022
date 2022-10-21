@@ -1,0 +1,26 @@
+#include <iostream>
+#include <bits/stdc++.h>
+using namespace std;
+
+int isSubstring(string str1, string str2)
+{
+    
+    if (str2.find(str1) != string::npos)
+        return str2.find(str1);
+    return -1;
+}
+ 
+
+int main()
+{
+    string str1 = "our";
+    string str2 = "behaviour";
+ 
+    // Function Call
+    int res = isSubstring(str1, str2);
+    if (res == -1)
+        cout << "No";
+    else
+        cout << "Yes: Present at index " << res;
+    return 0;
+}
