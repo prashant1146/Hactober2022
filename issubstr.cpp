@@ -23,7 +23,7 @@ bool issubstring(string s1, string s2)
 }
 int main()
 {
-    cout << "Enter Two Strings\n";
+    cout << "Enter Two Strings to campare first string is substring of second string or not\n";
     string s1, s2;
     cin >> s1 >> s2;
     if (issubstring(s1, s2))
